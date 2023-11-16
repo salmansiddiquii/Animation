@@ -1,0 +1,164 @@
+ body {
+
+     margin: 0;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+     background-color: black;
+ }
+
+ .header {
+     height: 15vh;
+     background-color: brown;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+ }
+
+
+ .start {
+     background-color: gray;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     width: fit-content;
+     padding: 10px 15px;
+     border-radius: 50px;
+     box-shadow: 2px 2px 2px black;
+     color: antiquewhite;
+     margin: auto;
+     position: relative;
+     top: 50%
+ }
+
+ .pressed {
+     background-color: white;
+     color: black
+ }
+
+
+ .right {
+     background-color: red;
+ }
+
+ .left {
+     background-color:aquamarine;
+ }
+
+ .sidebar {
+     width: 15vw;
+ }
+
+
+ .links {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+
+ }
+
+ .link {
+     font-size: 1.5em;
+     color: antiquewhite;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .footer {
+     height: 15vh;
+     background-color: blue;
+     /*  transform: translateY(100%);*/
+ }
+
+
+ .content {
+     flex-grow: 1;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ button {
+     align-self: center;
+ }
+
+
+
+ @media screen and (max-width: 600px) {
+
+
+
+     .sidebar {
+         width: 25vw;
+     }
+
+
+
+     .link {
+         font-size: 1.5em;
+         color: antiquewhite;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 1rem;
+     }
+
+
+     button {
+         background-color: rgb(28, 58, 83);
+         color: white;
+         padding: 8px 10px;
+         border-radius: 50px;
+         border: none;
+         box-shadow: 1px 1px 1px gray;
+         width: min-content;
+     }
+
+
+
+ }
+
+
+
+ /*
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+.header {
+    background-color: red;
+    
+}
+
+.links {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sidebar {
+    width: 15vh;
+    height: 100vh
+}
+
+.left {
+    background-color: blueviolet;
+}
+
+.right {
+    background-color: green;
+}
+
+button {
+    align-self: center;
+}
+
+*/
